@@ -26,7 +26,7 @@ public class UnitTest1
     {
         Method md = new();
         var result = md.Div2(0);
-        Assert.IsTrue(result.IsFail());
+        Assert.IsTrue(result.IsFail(), "*Div2 should fail*");
     }
 
 }
