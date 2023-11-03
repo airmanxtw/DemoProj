@@ -21,4 +21,12 @@ public class UnitTest1
         Assert.AreEqual(0.5, result.Value());
     }
 
+    [TestMethod]
+    public void TestMethod3()
+    {
+        Method md = new();
+        var result = md.Div2(0);
+        Assert.IsTrue(result.IsFail());
+    }
+
 }

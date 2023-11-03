@@ -18,4 +18,9 @@ public class Method
             return Left<string, double>("div by zero");
         return Right<string, double>(1 / x);
     }
+
+    public Try<double> Div2(double x)
+    {
+        return () => 1 / x;
+    }
 }
